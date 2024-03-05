@@ -43,8 +43,6 @@ button {
     border-radius: 0;
 }
 
-/* Aquí todo el CSS extra */
-
 body {
     min-height: 100vh;
     background-color: var(--clr-gray);
@@ -91,7 +89,7 @@ header {
 main {
     padding: 2rem;
     max-width: 1000px;
-    margin: 0, auto;
+    margin: 0 auto;
 }
 
 .pokemon-todos {
@@ -102,13 +100,13 @@ main {
 
 @media screen and (min-width: 470px) {
     .pokemon-todos {
-        grid-template-columns: 1fr, 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 }
 
 @media screen and (min-width: 700px) {
     .pokemon-todos {
-        grid-template-columns: 1fr, 1fr, 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     }
 }
 
@@ -140,7 +138,7 @@ main {
     justify-content: center;
 }
 
-.pokemon-imgen img {
+.pokemon-imagen img {
     width: 100%;
     max-width: 6rem;
 }
@@ -184,7 +182,7 @@ main {
 }
 
 .tipo {
-    padding: 0.25rem 0.5rem;
+    padding: .25rem .5rem;
     border-radius: 100vmax;
 }
 
@@ -200,7 +198,8 @@ main {
     border-radius: 100vmax;
 }
 
-/* Aquí comienzan los colores de botones según tipo */
+
+
 .normal {
     background-color: var(--type-normal);
     color: var(--clr-black);
